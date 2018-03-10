@@ -6,6 +6,7 @@
     google.load('search', '1');
     google.setOnLoadCallback(OnLoad);
     var search;
+    var pic1;
 
     //i suggest instead of this to make keywords list so first to pick random keyword than to do search and pick random image
     var keyword = 'mountains';
@@ -26,12 +27,12 @@
             var rnd = Math.floor(Math.random() * search.results.length);
 
             //you will probably use jQuery and something like: $('body').css('background-image', "url('" + search.results[rnd]['url'] + "')");
-            document.body.style.backgroundImage = "url('" + search.results[rnd]['url'] + "')";
+            pic1 = "url('" + search.results[rnd]['url'] + "')";
         }
     }
     </script>
 </head>
 <body>
-
+    <img src=pic1>;
 </body>
 </html>
